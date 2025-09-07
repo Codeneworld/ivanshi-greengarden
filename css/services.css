@@ -1,0 +1,211 @@
+/* Keep same design tokens */
+:root {
+    --navy: #1B1F3B;
+    --gold: #D4AF37;
+    --soft: #F5F5F5;
+    --text: #111111;
+    --max-width: 1100px
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background: white
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+  z-index: 40;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--navy);
+}
+
+.logo-mark {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.nav a {
+  margin: 0 0.6rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.book-btn {
+  background: var(--navy);
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.2rem
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.8rem
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-top: 1rem
+}
+
+.service-item {
+    display: flex;
+    gap: 1rem;
+    background: var(--soft);
+    padding: 0.8rem;
+    border-radius: 10px;
+    align-items: center
+}
+
+.service-item img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.service-body h3 {
+    margin: 0 0 0.4rem;
+    font-family: 'Playfair Display', serif
+}
+
+.section-booking {
+    margin-top: 2rem
+}
+
+.booking-form {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04)
+}
+
+.row {
+    display: flex;
+    gap: 1rem
+}
+
+label input,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #e9e9e9
+}
+
+.btn {
+    background: var(--navy);
+    color: white;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    border: 0
+}
+
+.site-footer {
+  background: #222;
+  color: #f5f5f5;
+  padding: 2.5rem 0 1rem 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.site-footer strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: #ffd700;
+  letter-spacing: 0.03em;
+}
+
+.site-footer a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-right: 1.2rem;
+  transition: color 0.2s;
+  font-weight: 400;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #fffbe7;
+  text-decoration: underline;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.copyright {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  letter-spacing: 0.02em;
+}
+
+@media(max-width:800px) {
+    .service-list {
+        grid-template-columns: 1fr
+    }
+
+    .row {
+        flex-direction: column
+    }
+}
