@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Ivanshi Green Garden</title>
+  <meta name="description" content="Gallery — photos of Ivanshi Green Garden's staging, decor and events." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">IG</span>
+        <span class="logo-text">Ivanshi Green Garden</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="book-btn" href="#booking">Book Now</a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section-light">
+      <div class="container">
+        <h1 class="section-title">Gallery</h1>
+        <p class="lead">Browse our curated event photos. Click any image to view larger.</p>
+
+        <!-- AUTOPLAY SLIDER (carousel) -->
+        <div class="slider" id="gallery-slider">
+          <div class="slides">
+            <img src="img1.jpg" alt="image">
+            <img src="img2.jpeg" alt="image">
+            <img src="img3.jpeg" alt="image">
+            <img src="img4.jpeg" alt="image">
+            <img src="img5.jpeg" alt="image">
+            <img src="img6.jpeg" alt="image">
+            <img src="img7.jpeg" alt="image">
+            <img src="img8.jpeg" alt="image">
+            <img src="img9.jpeg" alt="image">
+            <img src="img10.jpeg" alt="image">
+            <img src="img11.jpeg" alt="image">
+            <img src="img12.jpeg" alt="image">
+            <img src="img13.jpeg" alt="image">
+            <img src="img14.jpeg" alt="image">
+            <img src="img15.jpeg" alt="image">
+            <img src="img16.jpeg" alt="image">
+            <img src="img17.jpeg" alt="image">
+          </div>
+        </div>
+
+        <!-- GRID VIEW -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Replace images with local assets/images/gallery-*.jpg -->
+          <img src="img1.jpg" alt="Gallery image 1" loading="lazy">
+          <img src="img2.jpeg" alt="Gallery image 2" loading="lazy">
+          <img src="img3.jpeg" alt="Gallery image 3" loading="lazy">
+          <img src="img13.jpeg" alt="Gallery image 4" loading="lazy">
+          <img src="img4.jpeg" alt="Gallery image 5" loading="lazy">
+          <img src="img5.jpeg" alt="Gallery image 6" loading="lazy">
+          <img src="img6.jpeg" alt="Gallery image 7" loading="lazy">
+          <img src="img7.jpeg" alt="Gallery image 8" loading="lazy">
+          <img src="img8.jpeg" alt="Gallery image 9" loading="lazy">
+          <img src="img9.jpeg" alt="Gallery image 10" loading="lazy">
+          <img src="img10.jpeg" alt="Gallery image 11" loading="lazy">
+          <img src="img11.jpeg" alt="Gallery image 12" loading="lazy">
+          <img src="img12.jpeg" alt="Gallery image 13" loading="lazy">
+          <img src="img14.jpeg" alt="Gallery image 14" loading="lazy">
+          <img src="img15.jpeg" alt="Gallery image 15" loading="lazy">
+          <img src="img16.jpeg" alt="Gallery image 16" loading="lazy">
+          <img src="img17.jpeg" alt="Gallery image 17" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox modal (hidden by default) -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <img id="lightbox-img" src="" alt="Large view">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Ivanshi Green Garden</strong><br>
+        Phone: +91-9311133145<br>
+        Email: info@yourdomain.com
+      </div>
+    </div>
+    <div class="copyright">© <span id="year-3"></span> Ivanshi Green Garden — All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

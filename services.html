@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Ivanshi Green Garden</title>
+  <meta name="description"
+    content="Services at Ivanshi Green Garden wedding packages, corporate event management, catering, stage setups, AV & lighting." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <!-- Open Graph & Schema (short) -->
+  <meta property="og:title" content="Services — Ivanshi Green Garden" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/services.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"> &nbsp; &nbsp;
+        <span class="logo-mark">IG</span>
+        <span class="logo-text">Ivanshi Green Garden</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="book-btn" href="#booking">Book Now</a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section-light">
+      <div class="container">
+        <h1 class="section-title">What we offer</h1>
+        <p class="lead">Comprehensive event services — tailor-made packages for every budget and style.</p>
+
+        <div class="service-list">
+          <div class="service-item">
+            <img src="img1.jpg" alt="">
+            <div class="service-body">
+              <h3>Wedding Packages</h3>
+              <p>Full planning, vendor coordination, decor, stage setup, and dedicated wedding manager.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <img src="img7.jpeg" alt="">
+            <div class="service-body">
+              <h3>Corporate Events</h3>
+              <p>Boardroom layout, conference AV, projectors, mic systems, and high-speed Wi-Fi.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <img src="img8.jpeg" alt="">
+            <div class="service-body">
+              <h3>Catering & Menus</h3>
+              <p>Custom menus — vegetarian, regional, and international options prepared by trusted caterers.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <img src="img4.jpeg" alt="">
+            <div class="service-body">
+              <h3>Decoration & Lighting</h3>
+              <p>Contemporary staging, mood lighting, and floral decor to match your theme.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking form repeated before footer -->
+    <section id="booking" class="section-booking">
+      <div class="container">
+        <h2>Request a Booking</h2>
+        <form id="booking-form-2" class="booking-form">
+          <div class="row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="from_name" required>
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="phone" required>
+            </label>
+          </div>
+          <div class="row">
+            <label>
+              <span>Email</span>
+              <input type="email" name="reply_to" required>
+            </label>
+            <label>
+              <span>Event Date</span>
+              <input type="date" name="event_date" required>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4"
+              placeholder="Tell us about your event (guest count, preferences)"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Booking</button>
+            <div id="form-status-2" class="form-status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Ivanshi Green Garden</strong><br>
+        Phone: +91-9311133145<br>
+        Email: info@yourdomain.com
+      </div>
+    </div>
+    <div class="copyright">© <span id="year-2"></span> Ivanshi green garden — All rights reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

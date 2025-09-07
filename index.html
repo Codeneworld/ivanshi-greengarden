@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ivanshi Green Garden — Elegant Banquet & Events</title>
+  <meta name="description"
+    content="Ivanshi Green Garden — modern banquet hall for weddings, conferences, and private events. Elegant decor, tailored services, and seamless bookings." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Golden Hall — Elegant Banquet & Events" />
+  <meta property="og:description" content="Modern banquet hall for weddings, conferences, and private events." />
+  <meta property="og:image"
+    content="img1.jpg" />
+  <meta property="og:type" content="website" />
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "Ivanshi Green Garden",
+    "telephone": "+91-9311133145",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ivanshi Green, Paana Vihar ,Palwal,Palwalrural,Haryana 121102",
+      "addressLocality": "palwal",
+      "addressRegion": "Haryana",
+      "postalCode": "121102"
+    },
+    "image": "img1.jpg",
+    "description": "Modern banquet hall for weddings, conferences and events."
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"> &nbsp; &nbsp;
+        <span class="logo-mark">IG</span>
+        <span class="logo-text">Ivanshi Green Garden</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="book-btn" href="#booking">Book Now</a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-light">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="title">Celebrate beautifully at Ivanshi Green Garden</h1>
+          <p class="lead">An elegant, modern venue for weddings, corporate events, and private celebrations.
+            Customizable packages, curated dining, and dedicated event managers.</p>
+          <div class="hero-cta">
+            <a href="#booking" class="btn">Book Now</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- AUTOPLAY PHOTO SLIDER -->
+        <div class="slider" id="home-slider">
+          <div class="slides">
+            <img src="img1.jpg" alt="Hall 1" loading="lazy">
+            <img src="img2.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img3.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img4.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img5.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img6.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img7.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img8.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img9.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img10.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img11.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img12.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img13.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img14.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img15.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img16.jpeg" alt="Hall 3" loading="lazy">
+            <img src="img17.jpeg" alt="Hall 3" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES HIGHLIGHTS -->
+    <section class="section-secondary">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon">🎉</div>
+            <h3>Weddings</h3>
+            <p>Full wedding planning support, decor, and catering partners for memorable celebrations.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Corporate Events</h3>
+            <p>Conference setup, AV, seating layouts, and professional F&B services.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🥂</div>
+            <h3>Private Parties</h3>
+            <p>Birthday parties, anniversaries and private gatherings with tailored menus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING (also appears on Services page before footer) -->
+    <section id="booking" class="section-booking">
+      <div class="container">
+        <h2>Request a Booking</h2>
+        <form id="booking-form" class="booking-form">
+          <div class="row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="from_name" required>
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="phone" required>
+            </label>
+          </div>
+          <div class="row">
+            <label>
+              <span>Email</span>
+              <input type="email" name="reply_to" required>
+            </label>
+            <label>
+              <span>Event Date</span>
+              <input type="date" name="event_date" required>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4"
+              placeholder="Tell us about your event (guest count, preferences)"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Booking</button>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Ivanshi Green Garden</strong><br>
+        Phone: +91-9311133145<br>
+        Email: info@yourdomain.com
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="copyright">© <span id="year"></span> Ivanshi Green Garden — All rights reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
